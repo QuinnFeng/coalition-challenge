@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  #mountainsTab {
+    display: none;
+  }
+
+  .mountain{
+    display: block;
+  }
+
+  [aria-controls="accordionDropdown"] {
+    display: flex;
+  }
+
+  [aria-expanded="false"] ~ div {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ div {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .climb-text-section {
+    flex-direction: column;
+  }
+
+  .climb-text {
+    width: 60%;
+  }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Angeles Mountains</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./js/index.js">
+  </head>
+
+  <body>
+    <!-- Section 1 -->
+    <section class="section-1">
+
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img src="./images/logo.png" alt="mountain logo" />
+        </a>
+        <a href="#first-section" class="navbar-link"><strong><em><u>01. History</u></em></strong></a>
+        <a href="#climb-section" class="navbar-link"><strong><em><u>02. Team</u></em></strong></a>
+      </nav>
+    </section>
+    <!-- End of Section 1 -->
+
+    <!-- Sticky Nav -->
+    <section id="first-section" class="sticky-nav">
+      <a href="#" class="logo2">
+        <img src="./images/Logo_wMountains.png" alt="mountain logo" />
+      </a>
+      <nav class="navbar2">
+        <a href="#first-section" class="navbar-link black">
+          <strong><em>01. History</em></strong>
+        </a>
+        <a href="#climb-section" class="navbar-link black">
+          <strong><em>02. Team</em></strong>
+        </a>
+      </nav>
+    </section>
+    <!-- End of Sticky Nav -->
+
+    <!-- Section 2 -->
+    <section id="history-section" class="section-2 center">
+      <div class="history-text-section">
+        <div class="number-text">
+          <div class="number">
+            <p>01</p>
+          </div>
+          <div class="abstract-text">
+            <p>History</p>
+            <span></span>
+          </div>
+        </div>
+        <div class="history-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+          sint consequatur ducimus. Quis quasi, illum tempore aliquam
+          blanditiis neque praesentium non! Modi dolor in non. Consectetur,
+          vel laboriosam quod ipsam perspiciatis delectus nam adipisci eum
+          accusantium suscipit dolores.
+        </div>
+      </div>
+
+      <div class="carousel-section center">
+        <div class="carousel-bg">
+        </div>
+        <div id="blogCarousel" class="carousel center slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-image">
+                <img src="./images/thumb1.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb2.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb1.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb2.png" alt="Image" />
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-image">
+                <img src="./images/thumb1.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb2.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb1.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb2.png" alt="Image" />
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="carousel-image">
+                <img src="./images/thumb1.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb2.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb1.png" alt="Image" />
+              </div>
+              <div class="carousel-image">
+                <img src="./images/thumb2.png" alt="Image" />
+              </div>
+            </div>
+          </div>
+          <ul class="carousel-indicators">
+            <li data-slide-to="0" class="active"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+          </ul>
+        </div>
+      </div>
+      <!--.Carousel-->
+    </section>
+    <!-- End of Section 2 -->
+
+    <!-- Section 3 -->
+    <section id="climb-section">
+      <div class="climb-text-section">
+        <div class="number-text">
+          <div class="number">
+            <p>02</p>
+          </div>
+          <div class="abstract-text">
+            <p>Climb</p>
+            <span></span>
+          </div>
+        </div>
+        <div class="climb-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque,
+          libero quod illum eius porro ullam. Debitis quisquam incidunt
+          autem rerum enim quia blanditiis delectus? Fuga.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tab-container">
+        <ul class="nav-tabs" id="mountainsTab">
+          <li class="nav-item">
+            <button class="nav-link active" data-target="mountain1">
+              Mountain 1
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-target="mountain2">
+              Mountain 2
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mountains">
+        <div id="mountain1" class="mountain active">
+          <button class="accordion-toggler" aria-expanded="true" aria-controls="accordionDropdown">
+            <span>MOUNTAIN 1</span>
+            <span></span>
+          </button>
+          <div class="mountain-blog">
+            <div class="mountain-bg"></div>
+            <div class="schedule">
+              <h2>schedule</h2>
+              <div class="events">
+                <div class="event">
+                  <p>25 Nov 2016</p><span>Vestibulum vierra</span>
+                </div>
+                <div class="event">
+                  <p>28 Nov 2016</p><span>Vestibulum vierra</span>
+                </div>
+                <div class="event">
+                  <p>18 Dec 2016</p><span>Vestibulum vierra</span>
+                </div>
+                <div class="event">
+                  <p>7 Jan 2017</p><span>Vestibulum vierra</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mountain2" class="mountain">
+          <button class="accordion-toggler" aria-expanded="true" aria-controls="accordionDropdown">
+            <span>MOUNTAIN 1</span>
+            <span></span>
+          </button>
+          <div class="mountain-blog">
+            <div class="mountain-bg"></div>
+            <div class="schedule">
+              <h2>schedule</h2>
+              <div class="events">
+                <div class="event">
+                  <p>25 Nov 2016</p><span>Vestibulum vierra</span>
+                </div>
+                <div class="event">
+                  <p>28 Nov 2016</p><span>Vestibulum vierra</span>
+                </div>
+                <div class="event">
+                  <p>18 Dec 2016</p><span>Vestibulum vierra</span>
+                </div>
+                <div class="event">
+                  <p>7 Jan 2017</p><span>Vestibulum vierra</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-section">
+        <img src="./images/footerLogo.png" alt="logo">
+        <span>COPY RIGHT 2016. ALL RIGHT RESERVED.</span>
+      </div>
+    </footer>
+
+    <!-- End of Section 3 -->
+    <script src="js/index.js"></script>
+  </body>
+
+</html>
