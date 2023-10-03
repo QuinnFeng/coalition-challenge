@@ -1,9 +1,49 @@
 @media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  .navbar-link {
+    margin: 0 0.3125rem;
+  }
+
+  .navbar-link:hover {
+    transform: none;
+  }
+
+  .accordion-toggler[aria-expanded="false"] {
+    background-color: white;
+  }
+
+  .navbar-toggler[aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  .navbar-toggler[aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 1.25rem;
+    top: 2.5rem;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.7)
+    );
+    text-align: right;
+    box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+    border-radius: 5px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] ~ .sticky-section-nav {
+    right: calc(16% + 1.25rem);
+    border: 1px solid rgb(176, 180, 191, 0.3);
+  }
+
   #mountainsTab {
     display: none;
   }
 
-  .mountain{
+  .mountain {
     display: block;
   }
 
@@ -11,12 +51,22 @@
     display: flex;
   }
 
-  [aria-expanded="false"] ~ div {
+  .accordion-toggler[aria-expanded="false"] ~ div {
     display: none;
   }
 
-  [aria-expanded="true"] ~ div {
+  .accordion-toggler[aria-expanded="true"] ~ div {
     display: block;
+  }
+
+  .copy-right {
+    flex-direction: column;
+  }
+
+  .carousel-item.active {
+    grid-template-columns: repeat(2, minmax(5rem, 9vw));
+    grid-template-rows: repeat(2, minmax(2.5rem, 9vh));
+    gap: 0.3125rem;
   }
 }
 

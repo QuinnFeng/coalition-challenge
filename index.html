@@ -22,8 +22,21 @@
         <a href="#" class="logo">
           <img src="./images/logo.png" alt="mountain logo" />
         </a>
-        <a href="#first-section" class="navbar-link"><strong><em><u>01. History</u></em></strong></a>
-        <a href="#climb-section" class="navbar-link"><strong><em><u>02. Team</u></em></strong></a>
+        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+          <span>&#9776</span>
+        </button>
+        <ul class="section-list">
+          <li>
+            <a href="#first-section" class="navbar-link">
+              <strong><em><u>01. History</u></em></strong>
+            </a>
+          </li>
+          <li>
+            <a href="#climb-section" class="navbar-link">
+              <strong><em><u>02. Team</u></em></strong>
+            </a>
+          </li>
+        </ul>
       </nav>
     </section>
     <!-- End of Section 1 -->
@@ -33,14 +46,21 @@
       <a href="#" class="logo2">
         <img src="./images/Logo_wMountains.png" alt="mountain logo" />
       </a>
-      <nav class="navbar2">
-        <a href="#first-section" class="navbar-link black">
-          <strong><em>01. History</em></strong>
-        </a>
-        <a href="#climb-section" class="navbar-link black">
-          <strong><em>02. Team</em></strong>
-        </a>
-      </nav>
+      <button class="navbar-toggler sticky-nav-btn" aria-expanded="false" aria-controls="navbarDropdown">
+        <span>&#9776</span>
+      </button>
+      <ul class="section-list sticky-section-nav">
+        <li>
+          <a href="#first-section" class="navbar-link black">
+            <strong><em>01. History</em></strong>
+          </a>
+        </li>
+        <li>
+          <a href="#climb-section" class="navbar-link black">
+            <strong><em>02. Team</em></strong>
+          </a>
+        </li>
+      </ul>
     </section>
     <!-- End of Sticky Nav -->
 
@@ -70,7 +90,7 @@
         </div>
         <div id="blogCarousel" class="carousel center slide" data-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div id="carousel-item-0" class="carousel-item active">
               <div class="carousel-image">
                 <img src="./images/thumb1.png" alt="Image" />
               </div>
@@ -85,15 +105,15 @@
               </div>
             </div>
 
-            <div class="carousel-item">
+            <div id="carousel-item-1" class="carousel-item">
+              <div class="carousel-image">
+                <img src="./images/thumb1.png" alt="Image" />
+              </div>
               <div class="carousel-image">
                 <img src="./images/thumb1.png" alt="Image" />
               </div>
               <div class="carousel-image">
                 <img src="./images/thumb2.png" alt="Image" />
-              </div>
-              <div class="carousel-image">
-                <img src="./images/thumb1.png" alt="Image" />
               </div>
               <div class="carousel-image">
                 <img src="./images/thumb2.png" alt="Image" />
@@ -101,9 +121,9 @@
             </div>
 
 
-            <div class="carousel-item">
+            <div id="carousel-item-2" class="carousel-item">
               <div class="carousel-image">
-                <img src="./images/thumb1.png" alt="Image" />
+                <img src="./images/thumb2.png" alt="Image" />
               </div>
               <div class="carousel-image">
                 <img src="./images/thumb2.png" alt="Image" />
@@ -112,7 +132,7 @@
                 <img src="./images/thumb1.png" alt="Image" />
               </div>
               <div class="carousel-image">
-                <img src="./images/thumb2.png" alt="Image" />
+                <img src="./images/thumb1.png" alt="Image" />
               </div>
             </div>
           </div>
@@ -167,7 +187,6 @@
         <div id="mountain1" class="mountain active">
           <button class="accordion-toggler" aria-expanded="true" aria-controls="accordionDropdown">
             <span>MOUNTAIN 1</span>
-            <span></span>
           </button>
           <div class="mountain-blog">
             <div class="mountain-bg"></div>
@@ -193,7 +212,6 @@
         <div id="mountain2" class="mountain">
           <button class="accordion-toggler" aria-expanded="true" aria-controls="accordionDropdown">
             <span>MOUNTAIN 1</span>
-            <span></span>
           </button>
           <div class="mountain-blog">
             <div class="mountain-bg"></div>
@@ -221,7 +239,10 @@
     <footer class="footer">
       <div class="footer-section">
         <img src="./images/footerLogo.png" alt="logo">
-        <span>COPY RIGHT 2016. ALL RIGHT RESERVED.</span>
+        <div class="copy-right">
+          <span>COPY RIGHT 2016. </span>
+          <span>ALL RIGHT RESERVED.</span>
+        </div>
       </div>
     </footer>
 

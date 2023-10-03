@@ -80,12 +80,6 @@ hr {
   margin: 0;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
 :root {
   --primary-color: #414f6b;
   --deep-gray: #637593;
@@ -120,9 +114,9 @@ hr {
 
 .navbar-link {
   font-size: 1.5rem;
-  display: inline-block;
-  justify-content: space-evenly;
-  margin: 0 3rem;
+  display: inline-flex;
+  margin-left: 1rem;
+  margin-right: 3rem;
   color: white;
   transition: transform 0.5s;
   text-transform: uppercase;
@@ -144,14 +138,43 @@ hr {
   width: 100%;
   display: flex;
   align-items: center;
+  padding-right: 16%;
+  padding-left: 20%;
+  position: relative;
 }
 
-.navbar2 {
-  padding-right: 16%;
+.navbar-toggler {
+  position: absolute;
+  right: 1.25rem;
+  top: 0.625rem;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.sticky-nav-btn {
+  right: calc(16% + 1.25rem);
+  top: 0.625rem;
+}
+
+.navbar-toggler span {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.section-list {
+  display: flex;
+  flex-direction: row;
 }
 
 .logo2 {
-  margin: 0 auto 0 20%;
+  margin-right: auto;
 }
 
 .black {
@@ -268,20 +291,23 @@ hr {
 
 .carousel-item.active {
   display: grid;
-  grid-template-columns: repeat(4, minmax(8rem, 12vw));
+  grid-template-columns: repeat(4, minmax(8rem, 1fr));
   grid-template-rows: minmax(5rem, 15vh);
   gap: 0 0.3125rem;
+  transition: transform 0.6s ease-in-out;
 }
 
 .carousel-indicators {
   display: flex;
   gap: 0.5rem;
+  pointer-events: none;
 }
 .carousel-indicators li {
   background: rgba(231, 231, 231, 0.4);
   border-radius: 50%;
   width: 8px;
   height: 8px;
+  pointer-events: auto;
 }
 
 .carousel-indicators li:hover {
@@ -313,6 +339,10 @@ hr {
   background-color: var(--primary-color);
 }
 
+#mountainsTab {
+  pointer-events: none;
+}
+
 .nav-tabs {
   margin-left: 18%;
   display: flex;
@@ -327,6 +357,7 @@ hr {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.25rem;
+  pointer-events: auto;
 }
 
 .nav-item button.active {
@@ -402,10 +433,14 @@ hr {
 }
 
 .accordion-toggler {
+  display: flex;
+  align-items: center;
+  padding-left: 0.25rem;
   width: 100%;
   height: 2rem;
   background-color: var(--primary-color);
-  border: none;
+  border: 1px solid rgb(176, 180, 191, 0.3);
+  border-radius: 1px;
 }
 
 [aria-controls="accordionDropdown"] {
@@ -425,6 +460,14 @@ hr {
   margin-right: auto;
 }
 
-.footer-section span {
+.copy-right {
+  display: flex;
   margin-right: 2rem;
+  gap: 3px;
+}
+
+.copy-right span {
+  color: var(--deep-gray);
+  font-weight: 600;
+  font-size: 0.875rem;
 }
